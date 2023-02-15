@@ -31,4 +31,4 @@ jobs:
       - name: Run script
         run: |
           # .ファイルの実行
-          python line_automation.py
+          python line_automation_public.py
