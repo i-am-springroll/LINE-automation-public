@@ -87,5 +87,6 @@ class App:
 
 
 if __name__ == "__main__":
-    app = App("Hanamaki, JP")
+    place = "your city, your country"
+    app = App(place)
     app.index_app()
