@@ -8,13 +8,13 @@ import datetime
 class App:
     def __init__(self, city):
         self.URL_YAHOO = "https://www.yahoo.co.jp/"
-        self.TOKEN_LINE = "yxjyBxMI2lgndYQTKq9r5ySuRuWEN5nNvjGJJdgFJWX"
+        self.TOKEN_LINE = "your line token"
         self.API_LINE = "https://notify-api.line.me/api/notify"
-        self.TOKEN_WEATHER = "9d5eb5e621c6eaa6ca8507e8e7fd6a24"
+        self.TOKEN_WEATHER = "your openweather map token"
         self.API_WEATHER = "https://api.openweathermap.org/data/2.5/weather?q={}&appid={}&lang=ja&units=metric".format(city, self.TOKEN_WEATHER)
-        self.TOKEN_NOTION = "secret_mYrAOtoPWbdMdPuk0RTQJHqlHdSWpFVWA4AjfpkWV8N"
-        self.NOTION_DATABASE_ID_WEEKLY = "f83e4481abf043b4a7f466ac20098c3b"
-        self.NOTION_DATABASE_ID_ONEDAY = "f4275d3ca92a48409c4fa7fab0510c2e"
+        self.TOKEN_NOTION = "your notion token"
+        self.NOTION_DATABASE_ID_WEEKLY = "your notion weekly tasks database token"
+        self.NOTION_DATABASE_ID_ONEDAY = "your notion oneday tasks database token"
         self.NOTION_DATABASE_URL_WEEKLY = f'https://api.notion.com/v1/databases/{self.NOTION_DATABASE_ID_WEEKLY}/query'
         self.NOTION_DATABASE_URL_ONEDAY = f"https://api.notion.com/v1/databases/{self.NOTION_DATABASE_ID_ONEDAY}/query"
         self.list_title = []
