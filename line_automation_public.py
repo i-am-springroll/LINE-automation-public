@@ -8,13 +8,13 @@ import datetime
 class App:
     def __init__(self, city):
         self.URL_YAHOO = "https://www.yahoo.co.jp/"
-        self.TOKEN_LINE = "your line token"
+        self.TOKEN_LINE = "your line token"  # Please replace it with your LINE notify token.
         self.API_LINE = "https://notify-api.line.me/api/notify"
-        self.TOKEN_WEATHER = "your openweather map token"
+        self.TOKEN_WEATHER = "your openweather map token"  # Please replace it with your Open Weather Map token.
         self.API_WEATHER = "https://api.openweathermap.org/data/2.5/weather?q={}&appid={}&lang=ja&units=metric".format(city, self.TOKEN_WEATHER)
-        self.TOKEN_NOTION = "your notion token"
-        self.NOTION_DATABASE_ID_WEEKLY = "your notion weekly tasks database token"
-        self.NOTION_DATABASE_ID_ONEDAY = "your notion oneday tasks database token"
+        self.TOKEN_NOTION = "your notion token"  # Please replace it with your Notion integration token.
+        self.NOTION_DATABASE_ID_WEEKLY = "your notion weekly tasks database token"  # Please replace it with your oneday tasks database id.
+        self.NOTION_DATABASE_ID_ONEDAY = "your notion oneday tasks database token"  # Please replace it with your weekly tasks database id. 
         self.NOTION_DATABASE_URL_WEEKLY = f'https://api.notion.com/v1/databases/{self.NOTION_DATABASE_ID_WEEKLY}/query'
         self.NOTION_DATABASE_URL_ONEDAY = f"https://api.notion.com/v1/databases/{self.NOTION_DATABASE_ID_ONEDAY}/query"
         self.list_title = []
@@ -87,6 +87,6 @@ class App:
 
 
 if __name__ == "__main__":
-    place = "your city, your country"
+    place = "your city, your country"  # Please replace it with your living city ex:"Sendai, JP"
     app = App(place)
     app.index_app()
